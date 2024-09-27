@@ -1,0 +1,242 @@
+/* Global Styles for the website layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* General font style */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Dark text for contrast */
+  line-height: 1.6; /* Improves readability by increasing line height */
+}
+
+/* Header styling */
+header {
+  background-color: #0056b3; /* Darker blue background */
+  padding: 15px 0; /* Top and bottom padding */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex; /* Flexbox layout for horizontal alignment */
+  justify-content: space-between; /* Spaces out navbar items */
+  align-items: center; /* Vertically centres the items */
+  max-width: 1200px; /* Restricts the width of the navbar */
+  margin: 0 auto; /* Centres the navbar horizontally */
+  padding: 0 20px; /* Padding inside the navbar */
+}
+
+/* Branding within the navbar */
+.navbar-brand {
+  font-size: 1.5em; /* Larger font size for the brand name */
+  color: white; /* White text for better visibility */
+  text-decoration: none; /* Removes underline from the link */
+  font-weight: bold; /* Makes the text bold */
+}
+
+/* Navbar list styling */
+.navbar ul {
+  list-style: none; /* Removes bullet points */
+  display: flex; /* Aligns list items horizontally */
+  gap: 30px; /* Space between list items */
+}
+
+/* Navbar links styling */
+.navbar ul li a {
+  color: white; /* White link text */
+  text-decoration: none; /* Removes underline */
+  font-size: 1.1em; /* Slightly larger font size */
+  padding: 10px; /* Padding inside links */
+  transition: background-color 0.3s ease; /* Smooth transition for background on hover */
+}
+
+/* Navbar links hover effect */
+.navbar ul li a:hover {
+  background-color: #0d6efd; /* Lighter blue background on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Form Styles */
+main h1 {
+  text-align: centre; /* Centres the title */
+  margin-bottom: 30px; /* Adds space below the title */
+  font-size: 2.5em; /* Large font size for the title */
+  color: #333; /* Dark colour for the title */
+}
+
+form {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stacks elements vertically */
+  gap: 15px; /* Space between form elements */
+  max-width: 600px; /* Restricts the width of the form */
+  margin: 0 auto; /* Centres the form horizontally */
+  padding: 20px; /* Adds padding around the form */
+  background-color: white; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Form labels */
+form label {
+  font-size: 1.1em; /* Slightly larger font for labels */
+  font-weight: bold; /* Makes the label text bold */
+}
+
+/* Input and textarea styling */
+form input, form textarea {
+  padding: 10px; /* Adds padding inside the input */
+  font-size: 1em; /* Standard font size */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  width: 100%; /* Full width input */
+}
+
+/* Textarea-specific styling */
+form textarea {
+  resize: vertical; /* Allows vertical resizing only */
+  height: 100px; /* Default height */
+}
+
+/* Button styling */
+button {
+  padding: 12px; /* Adds padding inside the button */
+  background-color: #0056b3; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  font-size: 1.1em; /* Larger font size for the button */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0d6efd; /* Lighter blue background on hover */
+}
+
+/* Footer Styling */
+footer {
+  text-align: centre; /* Centres footer text */
+  padding: 20px; /* Adds padding inside the footer */
+  background-color: #0056b3; /* Blue background for the footer */
+  color: white; /* White text */
+  margin-top: 50px; /* Adds space above the footer */
+  font-size: 0.9em; /* Smaller font size for the footer */
+}
+
+/* Areas Section Styling */
+.areas {
+  display: flex; /* Flexbox layout for areas */
+  flex-wrap: wrap; /* Allows areas to wrap to the next line */
+  justify-content: space-around; /* Spaces the areas evenly */
+  gap: 20px; /* Space between each area */
+}
+
+.area {
+  background-color: white; /* White background */
+  border: 1px solid #ddd; /* Light grey border */
+  padding: 20px; /* Padding inside the area */
+  width: 300px; /* Fixed width for each area */
+  border-radius: 10px; /* Rounded corners */
+  text-align: centre; /* Centres the content inside each area */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.area img {
+  max-width: 100%; /* Ensures the image does not exceed the container width */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin-bottom: 15px; /* Adds space below the image */
+}
+
+img {
+  width: 300px; /* Fixed width for images */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensures the image maintains proportions */
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px; /* Maximum container width */
+  margin: 0 auto; /* Centres the container */
+  padding: 20px; /* Padding around the container */
+}
+
+.text-centre {
+  text-align: centre; /* Centres the text */
+}
+
+/* Game Board Styles */
+#game-board {
+  display: grid; /* Grid layout for the game board */
+  grid-template-columns: repeat(2, 150px); /* 2 columns with 150px width */
+  grid-template-rows: repeat(2, 150px); /* 2 rows with 150px height */
+  gap: 10px; /* Space between grid items */
+  margin: 20px auto; /* Centres the game board */
+}
+
+.block {
+  background-color: #333; /* Dark background for each block */
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For smaller screens such as tablets */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column; /* Stacks the navbar links vertically */
+    gap: 10px; /* Reduces the gap between links */
+  }
+}
+
+/* For very small screens such as mobile phones */
+@media (max-width: 480px) {
+  .area {
+    width: 100%; /* Full width for areas on small screens */
+  }
+}
+
+#game-board {
+  display: grid; /* Grid layout for the game board */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for 4 blocks */
+  grid-gap: 10px; /* Space between grid items */
+  margin-top: 20px; /* Adds space above the game board */
+}
+
+.block {
+  width: 150px; /* Fixed width for each block */
+  height: 150px; /* Fixed height for each block */
+  background-color: black; /* Starts with a black background */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  background-size: cover; /* Ensures background image covers the block */
+  background-position: centre; /* Centres the background image */
+}
+
+.block.revealed {
+  background-size: cover; /* Ensures background image covers the block when revealed */
+  background-position: centre; /* Centres the background image when revealed */
+}
+
+#ride-image {
+  display: none; /* The image remains hidden */
+}
+
+#ride-guess {
+  margin-top: 20px; /* Adds space above the guess input */
+}
+
+#submit-guess {
+  margin-left: 10px; /* Adds space to the left of the submit button */
+}
+
+/* Add this to your existing CSS */
+.faq-question {
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: colour 0.3s ease; /* Smooth transition for text colour */
+}
+
+/* Add hover effect for FAQ questions */
+.faq-question:hover {
+  color: #0056b3; /* Changes text colour on hover */
+  text-decoration: underline; /* Underlines text on hover for emphasis */
+}

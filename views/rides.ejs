@@ -1,0 +1,25 @@
+<%- include('header') %>
+
+<main>
+  <h1><%= title %></h1>
+  <ul>
+    <% if (rides.length) { %>
+      <% rides.forEach(ride => { %>
+        <li>
+          <h3><%= ride.name %></h3>
+          <p><%= ride.description %></p>
+          <!-- Check if image_url exists and display the image -->
+          <% if (ride.image_url) { %>
+            <img src="<%= ride.image_url %>" alt="<%= ride.name %>" style="max-width: 100%; height: auto;">
+          <% } else { %>
+            <p>No image available for this ride.</p>
+          <% } %>
+        </li>
+      <% }) %>
+    <% } else { %>
+      <p>No rides available for this area.</p>
+    <% } %>
+  </ul>
+</main>
+
+<%- include('footer') %>

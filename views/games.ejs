@@ -1,0 +1,31 @@
+<%- include('header') %>
+
+<main>
+  <h1>Guess the Ride!</h1>
+  <p>Click on the blocks to reveal parts of the ride image. Can you guess the ride?</p>
+  
+  <!-- Game Board with 4 blocks -->
+  <div id="game-board">
+    <div class="block" data-id="1"></div>
+    <div class="block" data-id="2"></div>
+    <div class="block" data-id="3"></div>
+    <div class="block" data-id="4"></div>
+  </div>
+  
+  <!-- Hidden image that blocks will reveal -->
+  <img id="ride-image" src="/images/hangover.jpg" alt="Ride Image" style="display: none;">
+
+  <!-- Input for player to guess the ride -->
+  <div>
+    <label for="ride-guess">Guess the Ride: </label>
+    <input type="text" id="ride-guess" placeholder="Enter ride name">
+    <button id="submit-guess">Submit Guess</button>
+  </div>
+
+  <!-- Display feedback to the player -->
+  <p id="game-message"></p>
+</main>
+
+<script src="/js/game.js"></script>
+
+<%- include('footer') %>

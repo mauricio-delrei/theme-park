@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('header') %>
+    <main>
+        <h1>Frequently Asked Questions</h1>
+        <ul>
+            <% faqs.forEach(faq => { %>
+                <li>
+                    <strong class="faq-question">Q: <%= faq.question %></strong>
+                    <p class="faq-answer" style="display: none;">A: <%= faq.answer %></p>
+                </li>
+            <% }); %>
+        </ul>
+    </main>
+   
+    <%- include('footer') %>
+  
+    <script src="/js/faq.js"></script>
+</body>
+</html>

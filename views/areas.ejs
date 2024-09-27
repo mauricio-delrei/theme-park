@@ -1,0 +1,24 @@
+<%- include('header') %>
+
+<main>
+  <h1><%= title %></h1>
+  <div class="areas">
+    <% areas.forEach(area => { %>
+      <div class="area">
+        <h2><%= area.name %></h2>
+        <p><%= area.description %></p>
+        <!-- Render the area image -->
+        <% if (area.image_url) { %>
+          <img src="<%= area.image_url %>" alt="<%= area.name %>" style="max-width: 100%; height: auto;">
+        <% } else { %>
+          <p>No image available for this area.</p>
+        <% } %>
+
+        <!-- Create a sublink to the Rides & Attractions page for each area -->
+        <h3><a href="/areas/<%= area.id %>/rides">Rides & Attractions</a></h3>
+      </div>
+    <% }) %>
+  </div>
+</main>
+
+<%- include('footer') %>
