@@ -57,7 +57,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-repo/theme-park-website.git
+git clone https://github.com/mauricio-delrei/theme-park
 Navigate to the project directory:
 
 bash
